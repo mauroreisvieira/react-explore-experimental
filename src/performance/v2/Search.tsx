@@ -10,7 +10,6 @@ export const Search = (): React.ReactElement => {
             value={value}
             onChange={(event: React.ChangeEvent<HTMLInputElement>) =>
                 setValue(event.target.value)
-            }
-        />
+            } />
     );
 };
