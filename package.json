@@ -22,12 +22,14 @@
     "lint:js": "eslint . --ext .js,.jsx,.ts,.tsx --quiet"
   },
   "dependencies": {
+    "faker": "4.1.0",
     "classnames": "^2.2.6",
     "react": "^18.0.0-alpha-88d121899-20210811",
     "react-dom": "^18.0.0-alpha-88d121899-20210811"
   },
   "devDependencies": {
     "@types/classnames": "^2.2.7",
+    "@types/faker": "^5.5.7",
     "@types/node": "^16.6.0",
     "@types/react": "^17.0.17",
     "@types/react-dom": "^17.0.9",

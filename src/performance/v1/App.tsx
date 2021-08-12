@@ -20,7 +20,7 @@ export const App = (): React.ReactElement => {
     const handleChange = React.useCallback(
         (event: React.ChangeEvent<HTMLInputElement>) =>
             setValue(event.target.value),
-        [value]
+        []
     );
 
     return (
