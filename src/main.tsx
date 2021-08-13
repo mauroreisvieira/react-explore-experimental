@@ -1,10 +1,17 @@
 import * as React from 'react';
 import ReactDOM from 'react-dom';
-import { List } from './features/List';
+// import { List } from './useTransition/List';
+import { App } from './useReducer';
 
 import './main.css';
+
+const Main = (): React.ReactElement => (
+    <>
+        <App />
+    </>
+)
 
 const rootElement = document.getElementById('root');
 if (!rootElement) throw new Error('Failed to find the root element');
 const root = ReactDOM.createRoot(rootElement);
-root.render(<List />);
+root.render(<Main />);
