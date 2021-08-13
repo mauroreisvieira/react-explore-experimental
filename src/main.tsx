@@ -1,7 +1,7 @@
 import * as React from 'react';
 import ReactDOM from 'react-dom';
 // import { List } from './useTransition/List';
-import { App } from './useReducer';
+import { App } from './useContext';
 
 import './main.css';
 

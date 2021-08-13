@@ -22,3 +22,7 @@ input {
 .highlight {
   background-color: yellowgreen;
 }
+
+.selected {
+  color: yellowgreen;
+}

@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 import { Button } from '../components/Button';
 
 type Action = {
@@ -6,8 +6,8 @@ type Action = {
 };
 
 type State = {
-  count: number;
-}
+    count: number;
+};
 
 const reducer = (state: State, action: Action) => {
     switch (action.type) {
@@ -20,7 +20,7 @@ const reducer = (state: State, action: Action) => {
         default:
             return state;
     }
-}
+};
 
 export const App = (): React.ReactElement => {
     const [state, dispatch] = React.useReducer(reducer, { count: 0 });
@@ -33,4 +33,4 @@ export const App = (): React.ReactElement => {
             <Button onClick={() => dispatch({ type: 'decrement' })}>-</Button>
         </>
     );
-}
+};
