@@ -14,10 +14,7 @@ export const ListItem: React.FC<ListItemProps> = ({
 }: ListItemProps & React.PropsWithChildren<ListItemProps>) => {
     const { selectedValue, onChange } = React.useContext(ListContext);
 
-    const isSelected = React.useMemo(
-        () => selectedValue === value,
-        [selectedValue, value]
-    );
+    const isSelected = selectedValue === value;
 
     const handleClick = (
         event: React.KeyboardEvent | React.MouseEvent
