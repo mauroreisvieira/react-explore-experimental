@@ -5,7 +5,7 @@ interface ListItemProps {
     highlight: string;
 }
 
-export const ListItem: React.FC<ListItemProps> = ({
+export const ListItem = ({
     name,
     highlight,
 }: ListItemProps): React.ReactElement | null => {
@@ -15,7 +15,7 @@ export const ListItem: React.FC<ListItemProps> = ({
     return (
         <li>
             {name.slice(0, index)}
-            <span className="highlight">
+            <span className="text-green-600 font-medium">
                 {name.slice(index, index + highlight.length)}
             </span>
             {name.slice(index + highlight.length)}

@@ -15,7 +15,7 @@ export const List= ({
     selectedValue,
     onChange,
 }: ListProps) => (
-    <ul className={cn('flex', className)}>
+    <ul className={cn(className)}>
         <ListContext.Provider
             value={{
                 selectedValue,

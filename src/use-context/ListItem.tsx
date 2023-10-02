@@ -20,7 +20,7 @@ export const ListItem = ({ value, onClick, children }: ListItemProps) => {
   };
 
   return (
-    <li className={cn('flex', isSelected && 'selected')} onClick={handleClick}>
+    <li className={cn(isSelected && 'text-indigo-500')} onClick={handleClick}>
       {children}
     </li>
   );
