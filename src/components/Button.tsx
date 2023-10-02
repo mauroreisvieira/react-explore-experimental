@@ -7,9 +7,10 @@ type ButtonAnchorNative = React.ButtonHTMLAttributes<HTMLButtonElement> &
 interface ButtonProps extends ButtonAnchorNative {
     skin?: 'primary' | 'danger';
     size?: 'sm' | 'md' | 'lg';
+    children?: React.ReactNode;
 }
 
-export const Button: React.FC<ButtonProps> = React.memo(
+export const Button = React.memo(
     ({
         skin = 'primary',
         size = 'md',

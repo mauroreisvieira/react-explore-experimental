@@ -1,8 +1,11 @@
 # React Hooks and Experimental Features Exploration
 
 Welcome to the React Hooks and Experimental Features Exploration repository!
+
 This project is aimed at exploring and testing React Hooks and experimental features using React and Vite.
+
 React Hooks provide a way to use state and other React features without writing a class, and they enable a more functional approach to building React components.
+
 This repository serves as a playground for experimenting with various React Hooks and other experimental features to understand their functionalities and applications.
 
 ## Purpose
@@ -52,5 +55,3 @@ Please follow the existing code style and conventions in the project.
 ## License
 
 This project is licensed under the **MIT License**. Feel free to use, modify, and distribute the code as per the terms of the license.
-
-Happy coding! 🚀
