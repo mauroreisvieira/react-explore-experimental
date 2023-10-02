@@ -1,13 +1,11 @@
-import * as React from 'react';
+import { createContext } from 'react';
 
 interface ListContextProps {
-    selectedValue: string;
-    onChange: (value: string) => void;
+  selectedValue: string;
+  onChange: (value: string) => void;
 }
 
-export const ListContext = React.createContext<ListContextProps>({
-    selectedValue: '',
-    onChange: () => {
-        /** return something */
-    },
+export const ListContext = createContext<ListContextProps>({
+  selectedValue: '',
+  onChange: () => {},
 });

@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { Input } from '../../components/Input';
+import { Input } from '../components/Input';
 
 export const Search = (): React.ReactElement => {
     console.log('%cSearch Render', 'color: pink');

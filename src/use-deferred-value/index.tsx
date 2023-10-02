@@ -22,15 +22,15 @@ export const App = () => {
   };
 
   return (
-    <div>
-      <Input type='text' value={name} onChange={handleChange} />
       <div>
-        {list.map((item) => {
-          return <p>{item}</p>;
-        })}
+        <Input type="text" value={name} onChange={handleChange} />
+        <div>
+          {list.map((item) => (
+            <p key={item}>{item}</p>
+        ))}
       </div>
     </div>
   );
-}
+};
 
 export default App;

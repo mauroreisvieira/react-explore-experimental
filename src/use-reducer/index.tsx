@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useReducer } from 'react';
 import { Button } from '../components/Button';
 
 type Action = {
@@ -23,7 +23,7 @@ const reducer = (state: State, action: Action) => {
 };
 
 export const App = (): React.ReactElement => {
-    const [state, dispatch] = React.useReducer(reducer, { count: 0 });
+    const [state, dispatch] = useReducer(reducer, { count: 0 });
     return (
         <>
             <p>Count: {state.count}</p>

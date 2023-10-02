@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { Button } from '../../components/Button';
+import { Button } from '../components/Button';
 
 export const Counter = (): React.ReactElement => {
     console.log('%cCounter Render', 'color: orange');

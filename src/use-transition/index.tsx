@@ -1,17 +1,17 @@
-import * as React from 'react';
-import faker from 'faker';
+import React, { useState, useTransition } from 'react';
+import { faker } from '@faker-js/faker';
 import { Input } from '../components/Input';
 
 import { List } from './List';
 import { ListItem } from './ListItem';
 
-const fakeNames = Array.from(Array(9000), (): string => faker.name.findName());
+const fakeNames = Array.from(Array(9000), (): string => faker.person.fullName());
 
 export const App: React.FC = (): React.ReactElement => {
-    const [query, setQuery] = React.useState<string>('');
-    const [highlight, setHighlight] = React.useState<string>('');
+    const [query, setQuery] = useState<string>('');
+    const [highlight, setHighlight] = useState<string>('');
 
-    const [isPending, startTransition] = React.useTransition();
+    const [isPending, startTransition] = useTransition();
 
     const changeHandler = ({
         target: { value },
