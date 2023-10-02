@@ -14,6 +14,6 @@
     "esModuleInterop": true,
     "target": "es6",
     "typeRoots": ["node_modules/@types"],
-    "types": ["react/next", "react-dom/next"]
+    "types": ["react/experimental"]
   }
 }

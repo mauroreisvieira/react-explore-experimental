@@ -22,10 +22,10 @@
     "lint:js": "eslint . --ext .js,.jsx,.ts,.tsx --quiet"
   },
   "dependencies": {
-    "faker": "4.1.0",
     "classnames": "^2.2.6",
-    "react": "^18.0.0-alpha-88d121899-20210811",
-    "react-dom": "^18.0.0-alpha-88d121899-20210811"
+    "faker": "4.1.0",
+    "react": "0.0.0-experimental-d900fadbf-20230929",
+    "react-dom": "0.0.0-experimental-d900fadbf-20230929"
   },
   "devDependencies": {
     "@types/classnames": "^2.2.7",
