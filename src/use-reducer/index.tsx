@@ -31,13 +31,6 @@ export default function UseReducerPage(): React.ReactElement {
         <span className="flex-1 text-center border p-4">{state.count}</span>
         <div className="flex gap-4">
           <Button
-            skin="danger"
-            className="flex-1"
-            onClick={() => dispatch({ type: 'reset' })}
-          >
-            Reset
-          </Button>
-          <Button
             className="flex-1"
             onClick={() => dispatch({ type: 'increment' })}
           >
@@ -50,6 +43,13 @@ export default function UseReducerPage(): React.ReactElement {
             -
           </Button>
         </div>
+        <Button
+          skin="danger"
+          className="flex-1"
+          onClick={() => dispatch({ type: 'reset' })}
+        >
+          Reset
+        </Button>
       </div>
     </>
   );

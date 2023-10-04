@@ -9,7 +9,7 @@ const SKINS = {
 };
 
 interface ButtonProps extends ButtonNative {
-  skin: keyof typeof SKINS;
+  skin?: keyof typeof SKINS;
 }
 
 export const Button = React.forwardRef(

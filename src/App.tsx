@@ -13,6 +13,7 @@ import UsePage from './use';
 import UseCallbackPage from './use-callback';
 import UseContextPage from './use-context';
 import UseDeferredValuePage from './use-deferred-value';
+import UseEffectEventPage from './use-effect-event';
 import UseOptimisticPage from './use-optimistic';
 import UseFormStatusPage from './use-form-status';
 import UseReducerPage from './use-reducer';
@@ -25,6 +26,7 @@ const router = createBrowserRouter(
       <Route path="use-callback" element={<UseCallbackPage />} />
       <Route path="use-context" element={<UseContextPage />} />
       <Route path="use-deferred-value" element={<UseDeferredValuePage />} />
+      <Route path="use-effect-event" element={<UseEffectEventPage />} />
       <Route path="use-optimistic" element={<UseOptimisticPage />} />
       <Route path="use-form-status" element={<UseFormStatusPage />} />
       <Route path="use-reducer" element={<UseReducerPage />} />

@@ -5,12 +5,13 @@ export function Layout() {
   return (
     <div className="flex min-h-full h-full">
       <aside className="h-full p-12 bg-gray-50">
-        <nav className="flex w-full flex-col gap-2 w-52">
+        <nav className="flex flex-col gap-2 w-52">
           {[
             { to: '/use', text: 'Use' },
             { to: '/use-callback', text: 'Use Callback' },
             { to: '/use-context', text: 'Use Context' },
             { to: '/use-deferred-value', text: 'Use Deferred Value' },
+            { to: '/use-effect-event', text: 'Use Effect Event' },
             { to: '/use-form-status', text: 'Use Form Status' },
             { to: '/use-Optimistic', text: 'Use Optimistic' },
             { to: '/use-reducer', text: 'Use Reducer' },
