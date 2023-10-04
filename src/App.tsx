@@ -17,6 +17,7 @@ import UseEffectEventPage from './use-effect-event';
 import UseOptimisticPage from './use-optimistic';
 import UseFormStatusPage from './use-form-status';
 import UseReducerPage from './use-reducer';
+import UseSyncExternalStorePage from './use-sync-external-store';
 import UseTransitionPage from './use-transition';
 
 const router = createBrowserRouter(
@@ -30,6 +31,7 @@ const router = createBrowserRouter(
       <Route path="use-optimistic" element={<UseOptimisticPage />} />
       <Route path="use-form-status" element={<UseFormStatusPage />} />
       <Route path="use-reducer" element={<UseReducerPage />} />
+      <Route path="use-sync-external-store" element={<UseSyncExternalStorePage />} />
       <Route path="use-transition" element={<UseTransitionPage />} />
     </Route>,
   ),

@@ -15,6 +15,7 @@ export function Layout() {
             { to: '/use-form-status', text: 'Use Form Status' },
             { to: '/use-Optimistic', text: 'Use Optimistic' },
             { to: '/use-reducer', text: 'Use Reducer' },
+            { to: '/use-sync-external-store', text: 'Use Sync External Store' },
             { to: '/use-transition', text: 'Use Transition' },
           ].map(({ to, text }) => (
             <NavLink
