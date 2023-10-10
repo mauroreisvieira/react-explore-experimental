@@ -9,6 +9,8 @@ import {
 import { Layout } from './components/Layout';
 // Pages
 // import { App } from './split';
+import ComponentAsPropPage from './component-as-prop';
+import FixedForwardRefPage from './fixed-forward-ref';
 import UsePage from './use';
 import UseCallbackPage from './use-callback';
 import UseContextPage from './use-context';
@@ -23,6 +25,8 @@ import UseTransitionPage from './use-transition';
 const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path="/" element={<Layout />}>
+      <Route path="component-as-prop" element={<ComponentAsPropPage />} />
+      <Route path="fixed-forward-ref" element={<FixedForwardRefPage />} />
       <Route path="use" element={<UsePage />} />
       <Route path="use-callback" element={<UseCallbackPage />} />
       <Route path="use-context" element={<UseContextPage />} />

@@ -7,6 +7,8 @@ export function Layout() {
       <aside className="h-full p-12 bg-gray-50">
         <nav className="flex flex-col gap-2 w-52">
           {[
+            { to: '/component-as-prop', text: 'Component as Prop' },
+            { to: '/fixed-forward-ref', text: 'Fixed Forward Ref' },
             { to: '/use', text: 'Use' },
             { to: '/use-callback', text: 'Use Callback' },
             { to: '/use-context', text: 'Use Context' },
