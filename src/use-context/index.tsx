@@ -1,9 +1,9 @@
-import * as React from 'react';
+import React, { useState } from 'react';
 import { List } from './List';
 import { ListItem } from './ListItem';
 
 export default function UseContextPage() {
-  const [item, setItem] = React.useState<string>('item-1');
+  const [item, setItem] = useState<string>('item-1');
   return (
     <div>
       <h1 className="text-2xl font-normal mb-12">

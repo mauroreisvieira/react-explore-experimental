@@ -52,14 +52,13 @@ export default function UseFormStatusPage(): React.ReactElement {
 }
 
 function SubmitButton() {
-  const data = useFormStatus();
+  const { pending } = useFormStatus();
 
-  const isLoading = data.pending;
   return (
     <Button
-      disabled={isLoading}
+      disabled={pending}
     >
-      {isLoading ? 'Loading...' : 'Submit'}
+      {pending ? 'Loading...' : 'Submit'}
     </Button>
   );
 }

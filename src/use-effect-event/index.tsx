@@ -1,4 +1,4 @@
-import React, {
+import {
   useState,
   useEffect,
   experimental_useEffectEvent as useEffectEvent,

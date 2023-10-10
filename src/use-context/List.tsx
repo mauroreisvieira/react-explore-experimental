@@ -1,4 +1,4 @@
-import * as React from 'react';
+import React from 'react';
 import { ListContext } from './ListContext';
 import { cn } from '../utils';
 

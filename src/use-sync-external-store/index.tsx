@@ -10,8 +10,7 @@ export default function UseSyncExternalStorePage(): React.ReactElement {
 
   const todos = useSyncExternalStore(store.subscribe, store.getTodos);
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
+  const onHandleSubmit = () => {
     store.addTodo(text);
     setText('');
   };
@@ -22,7 +21,7 @@ export default function UseSyncExternalStorePage(): React.ReactElement {
         `useSyncExternalStore` hook
       </h1>
       <div>
-        <form onSubmit={handleSubmit} className="flex gap-4">
+        <form onSubmit={onHandleSubmit} className="flex gap-4">
           <Input
             value={text}
             onChange={(e) => setText(e.target.value)}

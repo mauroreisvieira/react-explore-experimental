@@ -1,5 +1,5 @@
-import React, {useCallback } from 'react';
- // UI
+import React, { useCallback } from 'react';
+// UI
 import { Button } from '../components/Button';
 import { Input } from '../components/Input';
 
@@ -20,9 +20,7 @@ export default function UseCallbackPage(): React.ReactElement {
 
   return (
     <>
-      <h1 className="text-2xl font-normal mb-12">
-        `useCallback` hook
-      </h1>
+      <h1 className="text-2xl font-normal mb-12">`useCallback` hook</h1>
       <div className="flex flex-col gap-4">
         <div className="w-full">
           <Input value={value} onChange={handleChange} />
