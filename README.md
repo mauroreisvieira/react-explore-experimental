@@ -29,7 +29,7 @@ Follow these steps to get started with the project:
 **1. Clone the Repository:**
 
 ```bash
-git clone <repository-url>
+git clone https://github.com/mauroreisvieira/react-explore-experimental.git
 cd react-hooks-exploration
 ```
 
