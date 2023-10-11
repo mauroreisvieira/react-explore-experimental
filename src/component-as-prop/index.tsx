@@ -32,10 +32,16 @@ export default function ComponentAsPropPage(): React.ReactElement {
   return (
     <>
       <h1 className="text-2xl font-normal mb-12">Component as Prop</h1>
-      <div className="flex flex-col items-start">
-        <ComponentType icon={UserIcon} />
-        <ElementType element={'div'} />
-        <ElementType element={UserIcon} />
+      <div className="flex flex-col items-start gap-8">
+        <div>
+          <code className='text-sm text-indigo-500'>React.ComponentType</code>
+          <ComponentType icon={UserIcon} />
+        </div>
+        <div>
+          <code className='text-sm text-indigo-500'>React.ElementType</code>
+          <ElementType element={UserIcon} />
+          <ElementType element={'p'} />
+        </div>
       </div>
     </>
   );
